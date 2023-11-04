@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maksim's portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- META -->
+    <meta name="description" content="Software engineering student's portfolio">
+    <meta name="keywords" content="PROGRAMMER, STUDENT, PORTFOLIO, C++, C#, HTML, CSS">
+    <meta name="author" content="Maksim Ribashauskas">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon//site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="./images/SelfImages/AvatarPic.png" alt="avatar">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">
+                        Maksim<br>Ribashauskas
+                    </div>
+                    <div class="user__prof">Software engineering student</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#section-2">work</a>
+                <a class="nav__link" href="#section-3">about me</a>
+                <a class="nav__link" href="#section-4">blog</a>
+                <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="images/burger.svg" alt="context menu">
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro" id="section-1">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Hello i'm</h2>
+                <h1 class="intro__title">Maksim Ribashauskas</h1>
+                <div class="intro__text">Software engineering student</div>
+
+                <div class="social">
+                    <a class="social__link" target="_blank" href="https://www.linkedin.com/in/maksim-ribashauskas-39a6bb190/">
+                        <img src="images/linkedin.png" alt="In">
+                    </a>
+                    <a class="social__link" target="_blank" href="https://www.facebook.com/people/Maksim-Ribashauskas/100014149548244/">
+                        <img src="images/facebook.png" alt="FB">
+                    </a>
+                    <a class="social__link" target="_blank" href="https://www.instagram.com/makimribash/">
+                        <img src="images/instagram.png" alt="Inst">
+                    </a>
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+            </div>
+
+            <img class="intro__photo" src="./images/SelfImages/Myself_main.png" alt="main photo of me ;)">
+        </div><!-- /.intro__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Works -->
+<div class="works" id="section-2">
+    <div class="container">
+
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">All</a>
+            <a class="works__nav-link" href="#" data-filter="app">App</a>
+            <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+            <a class="works__nav-link" href="#" data-filter="interaction">Entertainment</a>
+        </div>
+
+
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="./images/ProjectImages/previews/MusicApp-370x300.png" alt="app1_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: app</div>
+                        <div class="work__title">
+                            Music app
+                            <time class="work__date" datetime="2020-06-18 20:00">2020</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="./images/ProjectImages/previews/html-css-370x300.png" alt="app2_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: website</div>
+                        <div class="work__title">
+                            Portfolio
+                            <time class="work__date" datetime="2022-02-15 00:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work" data-modal="#modal_project_3">
+                    <img class="work__image" src="./images/ProjectImages/previews/Rubil's-Cube-370x300.png" alt="app3_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: entertainment</div>
+                        <div class="work__title">
+                            Rubik's cube
+                            <time class="work__date" datetime="2022-01-25 19:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_4">
+                    <img class="work__image" src="./images/ProjectImages/previews/WordPress-370x300.png" alt="app4_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: website</div>
+                        <div class="work__title">
+                            Wordpress
+                            <time class="work__date" datetime="2021-12-05 19:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work" data-modal="#modal_project_5">
+                    <img class="work__image" src="./images/ProjectImages/previews/3Dmodel-370x300.png" alt="app5_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: entertainment</div>
+                        <div class="work__title">
+                            3D model
+                            <time class="work__date" datetime="2021-12-17 14:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_6">
+                    <img class="work__image" src="./images/ProjectImages/previews/VoiceChat-370x300.png" alt="app6_preview">
+                    <div class="work__content">
+                        <div class="work__cat">category: app</div>
+                        <div class="work__title">
+                            Voice chat
+                            <time class="work__date" datetime="2019-06-14 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.portfolio -->
+
+        <!-- <div class="text-center">
+            <a class="btn  btn--sm" href="#">LOAD MORE WORK</a>
+        </div> -->
+
+    </div><!-- /.container -->
+</div><!-- /.works -->
+
+
+
+<!-- About -->
+<section class="about" id="section-3">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/SelfImages/MyselfLow-1.png" alt="about_photo">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">about me</h3>
+                <h2 class="about__bigtitle">WHO AM I</h2>
+                <div class="about__text">
+                    <p>My name is Maksim Ribashauskas, and I’m a computer science student from Kaunas University of Technology. I think that programming is very funny and interesting because we can create almost everything.</p>
+                    <p> My studies have provided me with a strong foundation in the programming including understanding of algorithms, data structures, and debugging.</p>
+                    <p>Don't watch the mouth, watch the hands!</p>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Reviews -->
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>I would like to recommend Maksim Ribashauskas as a programmer to everyone. I was pleased with the work he did. Found this developer by accident, submitting an ad on the forum for simple improvements to the programm. In the process of doing the work, I realized that this programmer can perform more complex tasks. As a result, he brought my thoughts to life. It was not possible to check on the supercomplex, because there were simply no such tasks, but all the tasks I had were done well.</p>
+                <p>I liked that all questions were answered, and even on topics that were not related to the work being done. I didn’t have any special requirements for the deadlines for completing assignments, but Maxim still pleased me with the speed with which all assignments were completed. In general, I was satisfied with the work, I recommend it to everyone who is looking for an intelligent programmer.</p>
+            </div>
+
+            <div class="reviews__author">
+                <img class="reviews__photo" src="./images/ReviewPhoto-1-103x103.png" alt="customers_photo">
+                <div class="reviews__name">Svetlana Vovk</div>
+                <div class="reviews__company">Chief Accountant</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="./images/star.svg" width="13" height="13" alt="star">
+                    <img class="reviews__star" src="./images/star.svg" width="13" height="13" alt="star">
+                    <img class="reviews__star" src="./images/star.svg" width="13" height="13" alt="star">
+                    <img class="reviews__star" src="./images/star.svg" width="13" height="13" alt="star">
+                    <img class="reviews__star  reviews__star--unactive" src="./images/star.svg" width="13" height="13" alt="star">
+                </div>
+            </div>
+        </div><!-- /.reviews__item -->
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+
+
+
+<!-- News -->
+<section class="news" id="section-4">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">Something new</h3>
+            <div class="news__text">Sometimes I write something smart</div>
+        </div>
+
+
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            20<br>January
+                        </time>
+                            <img class="articles__photo" src="./images/NewsImages/NewsPicture-1.png" alt="new1_preview">
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            Digitalization of currencies
+                        </h4>
+                        <div class="articles__cat">Technology</div>
+                        <div class="articles__text">
+                            <p>The digitalization of currencies will only develop. Already, a huge number of people almost (or at all) not use paper money. Banking technologies allow for instant transactions and guarantee greater confidentiality and security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            1<br>February
+                        </time>
+                            <img class="articles__photo" src="./images/NewsImages/NewsPicture-2.png" alt="new2_preview">
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            Artificial Intelligence
+                        </h4>
+                        <div class="articles__cat">Technology</div>
+                        <div class="articles__text">
+                            <p>The creation of a full-fledged artificial intelligence is only a matter of time. This will be a turning point in the development of human civilization, after which the world will change forever. Artificial intelligence no longer seems to be something out of reach, especially with the rapid pace of development of neural networks. Machine learning has already reached a high level and is capable of many things, including writing scripts, books and songs. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            20 <br> October
+                        </time>
+                        <img class="articles__photo" src="./images/NewsImages/NewsPicture-3.png" alt="new3_preview">
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            3D printed heart
+                        </h4>
+                        <div class="articles__cat">Health</div>
+                        <div class="articles__text">
+                            <p>3D printing is gradually entering our lives, with the help of which it is possible to produce the most intricate details and finished products. A group of specialists from the University of Louisiana even managed to print out the working components of the human heart using fat cells and collagen. Experts expect that over the next 10 years, hearts and other organs of the human body will begin to come out of 3D printers to the delight of doctors and patients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.articles -->
+
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2022 Maksim Ribashauskas
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/maksim-ribashauskas-39a6bb190/" target="_blank">
+                        <img src="images/linkedin-gray.svg" width="18" alt="In">
+                    </a>
+                    <a href="https://www.facebook.com/people/Maksim-Ribashauskas/100014149548244/" target="_blank">
+                        <img src="images/fb-gray.svg" height="18" alt="Fb">
+                    </a>
+                    <a href="https://www.instagram.com/makimribash/" target="_blank">
+                        <img src="images/instagram-gray.svg" width="18" alt="Inst">
+                    </a>
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="#section-2">Work</a>
+                <a class="footer__nav-link" href="#section-3">About me</a>
+                <a class="footer__nav-link" href="#section-4">Blog</a>
+                <a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+
+
+
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/MusicApp-1-790x600.png" alt="project1_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/MusicApp-2-790x600.png" alt="project1_photo_2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Music app</h3>
+                    <div class="modal-work__info">
+                        App <span class="modal-work__info-divider">|</span> 2019
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">Nkkm school</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Music streaming platform from https://ncs.io (simple Spotify). Developed as final project for programming school.</p>
+                    <p>Developed only for Android using C# Xamarin.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Portfolio-1-790x600.png" alt="project2_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Portfolio-2-790x600.png" alt="project2_photo_2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Portfolio website</h3>
+                    <div class="modal-work__info">
+                        Website <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">Myself</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>My portfolio website of software engineering student.</p>
+                    <p>Website developed by UI43 - Free .psd Templates using html/css and {less} compressor. Also contains a few JS(JavaScript), php feedback form and SEO tags. Optimised for mobile.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Rubik'sCube-1-790-600.png" alt="project3_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Rubik'sCube-2-790x600.png" alt="project3_photo_2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Rubik's cube</h3>
+                    <div class="modal-work__info">
+                        Entertainment <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">Hobbie</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Rubik's cube mini-game written as hobby for learning new programming language.</p>
+                    <p>Mini-game developed using python by YouTube guides. In plans to do tracking function using webcam for scrambling real cube and writing change history.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_4">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/WordPress-1-790x600.png" alt="project4_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/WordPress-2-790x600.png" alt="project4_photo_2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Wordpress website</h3>
+                    <div class="modal-work__info">
+                        Website <span class="modal-work__info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">KTU university</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Wordpress website developed as a part of the group project at the university. It's currently online.</p>
+                    <p>Website contains gallery, video list and pages for every member of the team with their responsibilities.</p>
+                    <p>Link: <a href="https://stud.if.ktu.lt/~makrib/grupinis/" target="_blank"> https://stud.if.ktu.lt/~makrib/grupinis/ </a></p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_5">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Grenade-1-790x780.png" alt="project5_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/Grenade-2-790x780.png" alt="project5_photo_2">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/3DmodelJINX-3-360x700.png" alt="project5_photo_3">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">3D model</h3>
+                    <div class="modal-work__info">
+                        Entertainment <span class="modal-work__info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">As hobbie</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>After watching Arcane animated series created by Christian Linke and Alex Yee for Netflix, I wanted to create Jinx and her weapons. Jinx still in progress because of lack of knowledge in anatomy.</p>
+                    <p>On the other hand, her grenade is already finished. I would not said it's perfect, but as for me it is good model made by my-self.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_6">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/VoiceChat-1-790x600.png" alt="project6_photo_1">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="./images/ProjectImages/VoiceChat-2-790x600.png" alt="project6_photo_2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Voice Chat</h3>
+                    <div class="modal-work__info">
+                        App <span class="modal-work__info-divider">|</span> 2019
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Developed for:</div>
+                    <div class="modal-work__client-company">Learning</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Simple voice chat developed for learning C#.OOP Windows Forms.</p>
+                    <p>Сonnection is made through the IP address.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title  text-center">RESUME</h3>
+
+            <div class="text-center">
+                <a class="btn btn--thin" href="./files/CV Maksim Ribashauskas.pdf" download alt="CV">DOWNLOAD PDF</a>
+                <!--<a class="btn btn--thin" href="#" onclick="window.print();return false;">PRINT</a>-->
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">EXPERIENCE</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2020"><b>2022</b> - <b>2023</b></time>
+                        <h5 class="timeline__subtitle">Junior Test Engineer</h5>
+                        <div class="timeline__position">Unity Technologies</div>
+                        <div class="timeline__text">
+                            <p>Working as Test Engineer in CQA team to ensure qualyti of product. Finding bugs and suggesting solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">EDUCATION</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-10-2021">2021 - 2025</time>
+                        <h5 class="timeline__subtitle">Software Engineering</h5>
+                        <div class="timeline__position">Kaunas University of Technology, Lithuania</div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-10-2021">2017 - 2020</time>
+                        <h5 class="timeline__subtitle">Procedural and Object-Oriented Programming Courses</h5>
+                        <div class="timeline__position">NKKM school, Lithuania</div>
+                    </div>
+
+                    <h4 class="timeline__title">Skills</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Software Engineering</div>
+                            </div>
+                            <div class="progress-bar__right ">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Web Developing</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">SQL</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 55%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">3D modeling</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Problem Solving</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Responsibility</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+
+                    <h4 class="timeline__title">Awards</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2020</time>
+                        <h5 class="timeline__subtitle">Hash Code 2020 Diploma</h5>
+                        <div class="timeline__position">Google</div>
+                        <div class="timeline__text">
+                            <p>During the vacation at school I had participate in Google Hash Code tournament for teams. As I had no programmer friends at school I was participating only one.</p>
+                        </div>
+                    </div>
+
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+            <div class="text-center">
+                <a class="btn" href="#" data-close data-modal="#modal_hire_me">Hire me</a>
+            </div>
+
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.png" width="25" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <h4 class="modal__subtitle">CALL ME OR SEND ME A MESSAGE</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/phone.png" width="24" alt="phone">
+                        +370 670 95 606
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.png" width="24" alt="mail">
+                        makrik789@gmail.com
+                    </li>
+                </ul>
+
+                <form action="php/form-to-email.php" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-name">First Name</label>
+                        <input class="form__input" name="first_name" type="text" id="input-name" placeholder="First Name">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-surname">Last Name</label>
+                        <input class="form__input" name="last_name" type="text" id="input-surname" placeholder="Last Name">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Adress e-mail</label>
+                        <input class="form__input" name="email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Message</label>
+                        <textarea class="form__textarea" name="message" id="input-text" placeholder="Type your message..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit" name="submit">SEND</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
